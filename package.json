@@ -1,0 +1,23 @@
+{
+  "name": "socketio-typescript-template",
+  "version": "1.0.0",
+  "description": "A simple application in TypeScript with Node.js, that uses socket.io and sequelize",
+  "main": "./build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiricekcz/socketio-typescript-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jiricekcz/socketio-typescript-template/issues"
+  },
+  "homepage": "https://github.com/jiricekcz/socketio-typescript-template#readme",
+  "dependencies": {
+    "@types/node": "^17.0.23",
+    "socket.io": "^4.4.1"
+  }
+}
