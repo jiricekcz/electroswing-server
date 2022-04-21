@@ -9,7 +9,7 @@ https://linuxize.com/post/how-to-install-node-js-on-centos-7/
 ```
 Instal typescript
 ```sh
-npm i -g typescript
+npm i -g typescript pm2
 ```
 Compile
 ```sh
@@ -17,5 +17,5 @@ npx tsc
 ```
 Run 
 ```sh
-node .
+npx pm2 start . --name electroswing
 ```
