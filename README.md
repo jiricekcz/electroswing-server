@@ -15,7 +15,11 @@ Compile
 ```sh
 npx tsc
 ```
-Run 
+Register program
 ```sh
 npx pm2 start . --name electroswing
 ```
+Run 
+```sh
+npx pm2 start electroswing
+````
