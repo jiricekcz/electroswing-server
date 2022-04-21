@@ -23,8 +23,11 @@ export class ConnectionHandler {
         // @ts-expect-error 
         const handlerInstance: MessageHandler = new Handler(this.server);
 
-        if(!handlerInstance.verifyConnection(socket)) return;
-
+        if(!handlerInstance.verifyConnection(socket)) {
+            socket.disconnect();
+            return;
+        }
+        console.log(`New ${socket.handshake.auth.type} connection.`);
         handlerInstance.handleConnection(socket);
     }
 }
